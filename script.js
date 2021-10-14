@@ -1,9 +1,6 @@
 fetch('https://ghibliapi.herokuapp.com/films')
 .then(res => res.json())
 .then(data => {
-    console.log(data);
-    // recive the data from api
-
     for (let d of data){
         let select = document.querySelector("select");
         let newOption = document.createElement("option");
@@ -36,9 +33,7 @@ fetch('https://ghibliapi.herokuapp.com/films')
             }
         }
     })
-
     //creating the review format
-
     let form = document.querySelector("form");
    form.addEventListener("submit", (e) => {
     let titles = document.querySelector('#selected_title').value;
@@ -52,9 +47,8 @@ fetch('https://ghibliapi.herokuapp.com/films')
 
     li.innerHTML = `<b>${select_input}:</b><b><span>${titles}</span></b>`
     ul.append(li);
-
    } )
 })
 .catch(err => {
-    console.log("err")
+    console.log(err)
 });

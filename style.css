@@ -37,7 +37,10 @@ header h1{
 }
 
 select {
+    background-color: white;
     grid-area: select;
+    margin-right: 600px;
+    width: 300px;
 }
 
 section {
@@ -48,6 +51,9 @@ section {
 
 form {
     grid-area : form ;
+}
+#selected_title{
+    background-color: white;
 }
 
 ul {
