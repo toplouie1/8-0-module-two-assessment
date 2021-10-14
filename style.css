@@ -1,5 +1,6 @@
 * {
     background-color: lavender;
+    font-family: monospace;
 }
 header {
     display: grid;
@@ -24,13 +25,15 @@ header h1{
     background-color: skyblue;
 }
 .container {
+    margin : 0 auto;
+    width: 75%;
     margin-top: 20px;
     display : grid;
     grid-template-areas:
-    ". select ."
-    "section section section"
-    ". form form "
-    "ul ul ul "
+    ". select . ."
+    ". section section ."
+    ". form form . "
+    ". ul ul ."
 }
 
 select {
@@ -38,12 +41,14 @@ select {
 }
 
 section {
+    width: 75%;
     grid-area : section;
 }
 
 form {
-    grid-area : form 
+    grid-area : form ;
 }
+
 ul {
     grid-area: ul;
 }

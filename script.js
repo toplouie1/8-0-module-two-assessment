@@ -22,12 +22,17 @@ fetch('https://ghibliapi.herokuapp.com/films')
         let display = document.querySelector("#display-info");
 
         display.append(title_main, year_p , disc_p);
-         for (let d of data){
-            let { title , description , release_date } = d;
-            title_main.textContent = title;
-            year_p.textContent = release_date;
-            disc_p.textContent = description;
+         for (let i= 0; i < data.length; i++ ) {
+            let title = data[i].title;
+            let description = data[i].description;
+            let release_date = data[i].release_date;
 
+            if(select.value === data[i].title){
+                title_main.textContent = title;
+                disc_p.textContent = description;
+                year_p.textContent = release_date ;
+            }
+            
         }
     })
 })
