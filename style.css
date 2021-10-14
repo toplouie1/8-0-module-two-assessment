@@ -7,7 +7,7 @@ header {
     width : 75%;
     font-family: monospace;
     grid-template-areas: 
-    "img header";
+    "img heading";
     margin : 0 auto;
     text-align: center;
 }
@@ -20,6 +20,29 @@ header h1{
     text-align: center;
     height: 240px;
     font-size: 40px;
-    grid-area: header;
+    grid-area: heading;
     background-color: skyblue;
+}
+.container {
+    display : grid;
+    grid-template-areas:
+    ". select ."
+    "section section section"
+    ". form form "
+    "ul ul ul "
+}
+
+select {
+    grid-area: select;
+}
+
+section {
+    grid-area : section;
+}
+
+form {
+    grid-area : form 
+}
+ul {
+    grid-area: ul;
 }
