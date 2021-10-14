@@ -48,12 +48,9 @@ fetch('https://ghibliapi.herokuapp.com/films')
 
     let ul = document.querySelector("ul");
     let li = document.createElement("li");
-    // let select_input = document.querySelector()
+    let select_input = document.querySelector("#movie_select").value;
 
-    li.innerHTML = `
-    Hey how are you 
-    <span>${titles}</span>
-    `
+    li.innerHTML = `<b>${select_input}:</b><b><span>${titles}</span></b>`
     ul.append(li);
 
    } )
