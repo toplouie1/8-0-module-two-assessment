@@ -11,6 +11,8 @@ header {
     "img heading";
     margin : 0 auto;
     text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 header img {
     grid-area:img ;
@@ -39,7 +41,7 @@ header h1{
 select {
     background-color: white;
     grid-area: select;
-    margin-right: 600px;
+    margin-right: 200px;
     width: 300px;
 }
 
