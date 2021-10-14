@@ -24,6 +24,7 @@ header h1{
     background-color: skyblue;
 }
 .container {
+    margin-top: 20px;
     display : grid;
     grid-template-areas:
     ". select ."
