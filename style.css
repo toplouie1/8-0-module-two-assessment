@@ -1,0 +1,25 @@
+* {
+    background-color: lavender;
+}
+header {
+    display: grid;
+    background-color: skyblue;
+    width : 75%;
+    font-family: monospace;
+    grid-template-areas: 
+    "img header";
+    margin : 0 auto;
+    text-align: center;
+}
+header img {
+    grid-area:img ;
+    background-color: skyblue;
+    height: 240px;
+}
+header h1{ 
+    text-align: center;
+    height: 240px;
+    font-size: 40px;
+    grid-area: header;
+    background-color: skyblue;
+}
