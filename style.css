@@ -2,6 +2,7 @@
     background-color: lavender;
     font-family: monospace;
 }
+
 header {
     display: grid;
     background-color: skyblue;
@@ -14,18 +15,20 @@ header {
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
+
 header img {
     grid-area:img ;
     background-color: skyblue;
     height: 240px;
 }
+
 header h1{ 
     text-align: center;
-    height: 240px;
     font-size: 40px;
     grid-area: heading;
     background-color: skyblue;
 }
+
 .container {
     margin : 0 auto;
     width: 75%;
@@ -54,6 +57,7 @@ section {
 form {
     grid-area : form ;
 }
+
 #selected_title{
     background-color: white;
 }
